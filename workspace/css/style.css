@@ -39,20 +39,26 @@ main {
     width: 470px;
 }
 
-#instagram-slide {
+.slide {
     position: absolute;
-    z-index: 999;
+    z-index: 1;
     width: 250px;
     height: 445px;
-    margin-top: 10px;
-    margin-left: 90px;
-    background-image: url("../img/slide1.jpg");
+    margin-top: -218px;
+    margin-left: -315px;
+}
+
+.slide img{
+    width: 250px;
+    height: 445px;
 }
 
 .instagram-continue {
     display: flex;
-    align-items: center; /*horizontal*/
-    justify-content: center; /*vertical*/
+    align-items: center;
+    /*horizontal*/
+    justify-content: center;
+    /*vertical*/
     flex-direction: column;
     width: 50%;
     height: 640px;
@@ -155,7 +161,7 @@ footer {
     color: #8e8e8e;
 }
 
-.nav-footer{
+.nav-footer {
     margin: auto;
     justify-content: center;
 }
@@ -176,16 +182,16 @@ footer {
 
 }
 
-.rodape-footer{
+.rodape-footer {
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
     font-size: 12px;
 }
 
-.change-language{
+.change-language {
     margin: 10px;
     border: none;
     background-color: #FAFAFA;
