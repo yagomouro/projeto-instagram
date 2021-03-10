@@ -1,3 +1,5 @@
+/* Configuração Global */
+
 * {
     padding: 0;
     margin: 0;
@@ -7,6 +9,9 @@
     font-family: sans-serif;
     font-size: 14px;
 }
+
+
+/* Geral */
 
 body {
     background-color: #FAFAFA;
@@ -28,16 +33,21 @@ main {
     height: 790px;
 }
 
+
+/* Celulares */
+
 .instagram-phone {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
 }
 
 .instagram-phone img {
     width: 470px;
 }
+
+
+/* Slides do celular */
 
 .slide {
     position: absolute;
@@ -64,13 +74,15 @@ main {
     height: 445px;
 }
 
+/* Login */
+
 .instagram-continue {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     /*horizontal*/
     justify-content: center;
     /*vertical*/
-    flex-direction: column;
     width: 50%;
     height: 640px;
 
@@ -83,7 +95,7 @@ main {
     flex-direction: column;
     background-color: white;
     margin: 5px 0;
-    width: 100%;
+    width: 350px;
     padding: 1.3rem 0;
     border: 1px solid lightgray;
 }
@@ -135,16 +147,15 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
     padding: 1.3rem 0;
 }
 
 .download {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
     justify-content: center;
     align-items: center;
+    width: 150%;
     padding: 1rem;
 }
 
@@ -162,6 +173,8 @@ main {
 .app-download:nth-child(2) {
     background-image: url('../img/googleplay-button.png');
 }
+
+/* Links da parte de baixo */
 
 footer {
     display: flex;
@@ -215,13 +228,18 @@ footer {
 
 /* media queries */
 
-/* @media (max-witdh: 1024px) {
-    .instagram-wrapper {
-        width: 90%;
+@media (max-width: 900px) {
+    .instagram-phone {
+        display: none;
     }
-} */
 
-@media (max-width: 1000px) {
+    .instagram-continue {
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 500px) {
     body {
         background-color: white;
     }
@@ -230,15 +248,13 @@ footer {
         border: none;
     }
 
-    .instagram-wrapper {
-        width: 90%;
-    }
-
-    .instagram-phone {
-        display: none;
-    }
-
     .instagram-continue {
         width: 100%;
+        justify-content: flex-start;
     }
+    
+    .download{
+        width: 80%;
+    }
+
 }
