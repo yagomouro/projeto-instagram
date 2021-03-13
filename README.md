@@ -1,6 +1,6 @@
 ## Projeto Instagram DIO
 
->Projeto feito na plataforma Digital Innovation One, com objetivo de recriar a página inicial de login do Instagram.
+>Projeto proposto pela [Digital Innovation One](https://digitalinnovation.one/sign-up?ref=NPRAJ6J67I), com objetivo de recriar a página inicial de login do Instagram.
 
 >**Desafio inicial:** Reconstruir a página inicial de login do Instagram na versão da aula apresentada, utilizando o conceito de Flexbox e de responsividade.
 >
